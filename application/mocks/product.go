@@ -11,7 +11,6 @@ import (
 	application "github.com/joaotavioos/hexagonal/application"
 )
 
-
 // MockProductInterface is a mock of ProductInterface interface.
 type MockProductInterface struct {
 	ctrl     *gomock.Controller
