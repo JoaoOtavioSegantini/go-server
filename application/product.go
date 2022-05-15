@@ -105,12 +105,15 @@ func (p *Product) GetName() string {
 	return p.Name
 
 }
-func (p *Product) GetPrice() float64 {
-	return p.GetPrice()
-}
+
 func (p *Product) GetID() string {
-	return p.GetID()
+	return p.ID
 }
+
 func (p *Product) GetStatus() string {
-	return p.GetStatus()
+	return p.Status
+}
+
+func (p *Product) GetPrice() float64 {
+	return p.Price
 }
