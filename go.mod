@@ -7,7 +7,6 @@ require (
 	github.com/dgryski/trifles v0.0.0-20211222222045-8cbc5c9974ec
 	github.com/golang/mock v1.6.0
 	github.com/mattn/go-sqlite3 v1.14.13
+	github.com/spf13/cobra v1.4.0
 	github.com/stretchr/testify v1.7.1
 )
-
-

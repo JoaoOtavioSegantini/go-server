@@ -2,7 +2,6 @@ package db
 
 import (
 	"database/sql"
-	"log"
 
 	"github.com/joaotavioos/hexagonal/application"
 	_ "github.com/mattn/go-sqlite3"
@@ -25,7 +24,6 @@ func (p *ProductDb) Get(id string) (application.ProductInterface, error) {
 	}
 	err = stmt.QueryRow(id).Scan(&product.ID, &product.Name, &product.Price, &product.Status)
 	if err != nil {
-		log.Fatal("ocorreu um erro no prepare")
 		return nil, err
 	}
 	return &product, nil
